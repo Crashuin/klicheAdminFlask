@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}Iniciar sesión{% endblock %}
+
+{% block content %}
+<div class="login-box">
+    <div class="card p-4">
+        <div class="login-logo">
+            <a href="#"><img class="img-fluid" src="{{ url_for('static', filename='img/logoKliche.png')}}" alt="logo Kliche"></a>
+        </div>
+        <div class="card-body login-card-body">
+            <h2 class="login-box-msg fs-1">Inicio de sesión</h2>
+            <!-- formulario de inicio de sesión aquí -->
+            <form action="{{ url_for('login') }}" method="post">
+                <!-- Tu formulario de inicio de sesión aquí -->
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder=" Carlos11@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" class="form-control" id="contrasena">
+                </div>
+                
+                <a type="button" class="btn btn-primary mt-3 text-center" href="/dashboard/home">Iniciar sesión</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
