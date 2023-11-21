@@ -1,21 +1,29 @@
-{% block title %}sidebar{% endblock %}
+{% block styles %}
+    <!-- Referencia al archivo de estilo de la sección específica -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sidebar.css') }}">
+{% endblock %}
+
 
 {% block content %}
 
 
 <!-- Sidebar -->
-<nav >
-    <div class="sidebar-header">
-        <h3>Kliche Admin</h3>
+<nav>
+    <div class="sidebar-header text-white my-4 mx-2">
+        <div class="d-flex">
+            <h3 class="m-auto">Kliche Admin</h3>
+        </div>
     </div>
 
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Inicio</li>
-        <li class="list-group-item">Usuarios</li>
-        <li class="list-group-item">Clientes</li>
-        <li class="list-group-item">Categorias</li>
-        <li class="list-group-item">Productos</li>
-        <li class="list-group-item">Ventas</li>
+    <ul class="list-group list-group-flush ">
+        <div id="sidebar-personalizado">
+            <li class="list-group-item"><span>Inicio</span></li>
+            <li class="list-group-item"><span>Usuarios</span></li>
+            <li class="list-group-item"><span>Clientes</span> </li>
+            <li class="list-group-item"><span>Categorias</span></li>
+            <li class="list-group-item"><span>Productos</span></li>
+            <li class="list-group-item"><span>Ventas</span></li>
+        </div>
       </ul>
     
 </nav>

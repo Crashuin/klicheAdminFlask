@@ -31,19 +31,4 @@
     grid-column: 1 / 2; /* Ocupa la primera columna */
     grid-row: 1 / 3;    /* Ocupa desde la fila 1 hasta la fila 3 */
   }
-  
-  /* .header {
-    grid-area: header;
-  }
-  
-  .sidebar {
-    grid-area: side;
-  }
-  
-  .main {
-    grid-area: main;
-  }
-   */
-  
-
 
